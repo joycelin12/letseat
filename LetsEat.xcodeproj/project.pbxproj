@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0D26A02634B8B90095957C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0D269F2634B8B80095957C /* MapKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		0D42E17025FD6ECC001CA409 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D42E16F25FD6ECC001CA409 /* AppDelegate.swift */; };
-		0D42E17225FD6ECC001CA409 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D42E17125FD6ECC001CA409 /* ViewController.swift */; };
 		0D42E17525FD6ECC001CA409 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D42E17325FD6ECC001CA409 /* Main.storyboard */; };
-		0D42E17725FD6ECC001CA409 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D42E17625FD6ECC001CA409 /* Assets.xcassets */; };
 		0D42E17A25FD6ECC001CA409 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D42E17825FD6ECC001CA409 /* LaunchScreen.storyboard */; };
+		0D42E18425FD8887001CA409 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D42E18325FD8887001CA409 /* Assets.xcassets */; };
+		0D42E18625FD9799001CA409 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D42E18525FD9799001CA409 /* ExploreViewController.swift */; };
+		0D42E18825FD979B001CA409 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D42E18725FD979B001CA409 /* RestaurantViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D0D269F2634B8B80095957C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0D42E16C25FD6ECB001CA409 /* LetsEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D42E16F25FD6ECC001CA409 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0D42E17125FD6ECC001CA409 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0D42E17425FD6ECC001CA409 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0D42E17625FD6ECC001CA409 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D42E17925FD6ECC001CA409 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D42E17B25FD6ECC001CA409 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D42E18325FD8887001CA409 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D42E18525FD9799001CA409 /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		0D42E18725FD979B001CA409 /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D0D26A02634B8B90095957C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D0D269E2634B8B80095957C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D0D269F2634B8B80095957C /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0D42E16325FD6ECA001CA409 = {
 			isa = PBXGroup;
 			children = (
 				0D42E16E25FD6ECB001CA409 /* LetsEat */,
 				0D42E16D25FD6ECB001CA409 /* Products */,
+				0D0D269E2634B8B80095957C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,9 +69,10 @@
 			isa = PBXGroup;
 			children = (
 				0D42E16F25FD6ECC001CA409 /* AppDelegate.swift */,
-				0D42E17125FD6ECC001CA409 /* ViewController.swift */,
+				0D42E18325FD8887001CA409 /* Assets.xcassets */,
+				0D42E18525FD9799001CA409 /* ExploreViewController.swift */,
+				0D42E18725FD979B001CA409 /* RestaurantViewController.swift */,
 				0D42E17325FD6ECC001CA409 /* Main.storyboard */,
-				0D42E17625FD6ECC001CA409 /* Assets.xcassets */,
 				0D42E17825FD6ECC001CA409 /* LaunchScreen.storyboard */,
 				0D42E17B25FD6ECC001CA409 /* Info.plist */,
 			);
@@ -124,7 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D42E17A25FD6ECC001CA409 /* LaunchScreen.storyboard in Resources */,
-				0D42E17725FD6ECC001CA409 /* Assets.xcassets in Resources */,
+				0D42E18425FD8887001CA409 /* Assets.xcassets in Resources */,
 				0D42E17525FD6ECC001CA409 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D42E17225FD6ECC001CA409 /* ViewController.swift in Sources */,
+				0D42E18625FD9799001CA409 /* ExploreViewController.swift in Sources */,
+				0D42E18825FD979B001CA409 /* RestaurantViewController.swift in Sources */,
 				0D42E17025FD6ECC001CA409 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,7 +273,6 @@
 		0D42E17F25FD6ECC001CA409 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LetsEat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Williamson.LetsEat;
@@ -269,7 +284,6 @@
 		0D42E18025FD6ECC001CA409 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LetsEat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Williamson.LetsEat;
@@ -297,6 +311,7 @@
 				0D42E18025FD6ECC001CA409 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
