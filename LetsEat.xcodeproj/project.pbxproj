@@ -18,6 +18,8 @@
 
 /* Begin PBXFileReference section */
 		0D0D269F2634B8B80095957C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0D0D26A22634D1040095957C /* FunctionsStructs.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FunctionsStructs.playground; sourceTree = "<group>"; };
+		0D0D26A32634D7FD0095957C /* CollectionViewBasics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CollectionViewBasics.playground; sourceTree = "<group>"; };
 		0D42E16C25FD6ECB001CA409 /* LetsEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D42E16F25FD6ECC001CA409 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D42E17425FD6ECC001CA409 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,9 +50,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		0D0D26A12634D0A70095957C /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				0D0D26A22634D1040095957C /* FunctionsStructs.playground */,
+				0D0D26A32634D7FD0095957C /* CollectionViewBasics.playground */,
+			);
+			name = Playgrounds;
+			sourceTree = "<group>";
+		};
 		0D42E16325FD6ECA001CA409 = {
 			isa = PBXGroup;
 			children = (
+				0D0D26A12634D0A70095957C /* Playgrounds */,
 				0D42E16E25FD6ECB001CA409 /* LetsEat */,
 				0D42E16D25FD6ECB001CA409 /* Products */,
 				0D0D269E2634B8B80095957C /* Frameworks */,
