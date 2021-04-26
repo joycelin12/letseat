@@ -7,16 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D031E522635ECF1000E778B /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D031E512635ECF1000E778B /* ExploreViewController.swift */; };
+		0D031E552636261D000E778B /* ExploreData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D031E542636261D000E778B /* ExploreData.plist */; };
+		0D031E57263642A5000E778B /* ExploreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D031E56263642A5000E778B /* ExploreItem.swift */; };
+		0D031E5926364898000E778B /* ExploreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D031E5826364898000E778B /* ExploreDataManager.swift */; };
 		0D0D26A02634B8B90095957C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0D269F2634B8B80095957C /* MapKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		0D42E17025FD6ECC001CA409 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D42E16F25FD6ECC001CA409 /* AppDelegate.swift */; };
 		0D42E17525FD6ECC001CA409 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D42E17325FD6ECC001CA409 /* Main.storyboard */; };
 		0D42E17A25FD6ECC001CA409 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D42E17825FD6ECC001CA409 /* LaunchScreen.storyboard */; };
 		0D42E18425FD8887001CA409 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D42E18325FD8887001CA409 /* Assets.xcassets */; };
-		0D42E18625FD9799001CA409 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D42E18525FD9799001CA409 /* ExploreViewController.swift */; };
 		0D42E18825FD979B001CA409 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D42E18725FD979B001CA409 /* RestaurantViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D031E512635ECF1000E778B /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExploreViewController.swift; path = ../ExploreViewController.swift; sourceTree = "<group>"; };
+		0D031E542636261D000E778B /* ExploreData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ExploreData.plist; path = "../../../../../Downloads/iOS-12-Programming-for-Beginners-Third-Edition-master/Chapter12/completed/LetsEat/LetsEat/Controllers/Explore/Model/ExploreData.plist"; sourceTree = "<group>"; };
+		0D031E56263642A5000E778B /* ExploreItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreItem.swift; sourceTree = "<group>"; };
+		0D031E5826364898000E778B /* ExploreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreDataManager.swift; sourceTree = "<group>"; };
 		0D0D269F2634B8B80095957C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0D0D26A22634D1040095957C /* FunctionsStructs.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FunctionsStructs.playground; sourceTree = "<group>"; };
 		0D0D26A32634D7FD0095957C /* CollectionViewBasics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CollectionViewBasics.playground; sourceTree = "<group>"; };
@@ -26,7 +33,6 @@
 		0D42E17925FD6ECC001CA409 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D42E17B25FD6ECC001CA409 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D42E18325FD8887001CA409 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0D42E18525FD9799001CA409 /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		0D42E18725FD979B001CA409 /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -42,6 +48,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D031E5326362608000E778B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D031E542636261D000E778B /* ExploreData.plist */,
+				0D031E56263642A5000E778B /* ExploreItem.swift */,
+				0D031E5826364898000E778B /* ExploreDataManager.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		0D0D269E2634B8B80095957C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,9 +96,10 @@
 		0D42E16E25FD6ECB001CA409 /* LetsEat */ = {
 			isa = PBXGroup;
 			children = (
+				0D031E5326362608000E778B /* Model */,
 				0D42E16F25FD6ECC001CA409 /* AppDelegate.swift */,
 				0D42E18325FD8887001CA409 /* Assets.xcassets */,
-				0D42E18525FD9799001CA409 /* ExploreViewController.swift */,
+				0D031E512635ECF1000E778B /* ExploreViewController.swift */,
 				0D42E18725FD979B001CA409 /* RestaurantViewController.swift */,
 				0D42E17325FD6ECC001CA409 /* Main.storyboard */,
 				0D42E17825FD6ECC001CA409 /* LaunchScreen.storyboard */,
@@ -150,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D031E552636261D000E778B /* ExploreData.plist in Resources */,
 				0D42E17A25FD6ECC001CA409 /* LaunchScreen.storyboard in Resources */,
 				0D42E18425FD8887001CA409 /* Assets.xcassets in Resources */,
 				0D42E17525FD6ECC001CA409 /* Main.storyboard in Resources */,
@@ -163,8 +181,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D42E18625FD9799001CA409 /* ExploreViewController.swift in Sources */,
+				0D031E522635ECF1000E778B /* ExploreViewController.swift in Sources */,
 				0D42E18825FD979B001CA409 /* RestaurantViewController.swift in Sources */,
+				0D031E57263642A5000E778B /* ExploreItem.swift in Sources */,
+				0D031E5926364898000E778B /* ExploreDataManager.swift in Sources */,
 				0D42E17025FD6ECC001CA409 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

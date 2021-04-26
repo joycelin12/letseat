@@ -62,11 +62,11 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1RQ-W3-Q1W" id="Ybq-rf-8yt">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TCR-cM-fqT">
-                                                    <rect key="frame" x="15" y="0.0" width="384" height="43.666666666666664"/>
+                                                    <rect key="frame" x="15" y="0.0" width="384" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -234,6 +234,10 @@
                                         <constraint firstItem="80E-Fs-Yy5" firstAttribute="leading" secondItem="FBH-PK-6PW" secondAttribute="leading" id="u7b-W9-mHs"/>
                                     </constraints>
                                 </collectionReusableView>
+                                <connections>
+                                    <outlet property="dataSource" destination="b5P-px-xVU" id="bhj-cK-jqz"/>
+                                    <outlet property="delegate" destination="b5P-px-xVU" id="Iyv-Je-T8M"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -245,6 +249,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="86i-jp-fUn"/>
+                    <connections>
+                        <outlet property="collectionView" destination="o8p-Gy-vbh" id="6Y0-3x-Jf9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6DM-md-C4M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -273,7 +280,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="restaurantCell" id="QaL-Cq-E0b">
-                                        <rect key="frame" x="20" y="0.0" width="375" height="312"/>
+                                        <rect key="frame" x="19.666666666666668" y="0.0" width="375" height="312"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="312"/>
@@ -283,30 +290,30 @@
                                                     <rect key="frame" x="76" y="208" width="224" height="93"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available Times" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRS-wA-waU">
-                                                            <rect key="frame" x="0.0" y="39" width="224" height="15"/>
+                                                            <rect key="frame" x="0.0" y="39" width="224" height="23.333333333333314"/>
                                                             <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="usn-bm-9Pq">
-                                                            <rect key="frame" x="0.0" y="64" width="224" height="27"/>
+                                                            <rect key="frame" x="0.0" y="72.333333333333314" width="224" height="14.666666666666686"/>
                                                             <subviews>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOa-eX-9ZN">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="68" height="27"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="68" height="14.666666666666686"/>
                                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
                                                                     <state key="normal" title="7:30 pm" backgroundImage="time-bg">
                                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     </state>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bdt-7f-9uB">
-                                                                    <rect key="frame" x="78" y="0.0" width="68" height="27"/>
+                                                                    <rect key="frame" x="78" y="0.0" width="68" height="14.666666666666686"/>
                                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
                                                                     <state key="normal" title="7:30 pm" backgroundImage="time-bg">
                                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     </state>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwv-Tb-keA">
-                                                                    <rect key="frame" x="156" y="0.0" width="68" height="27"/>
+                                                                    <rect key="frame" x="156" y="0.0" width="68" height="14.666666666666686"/>
                                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
                                                                     <state key="normal" title="7:30 pm" backgroundImage="time-bg">
                                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
