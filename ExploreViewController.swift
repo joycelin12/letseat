@@ -12,10 +12,12 @@ class ExploreViewController: UIViewController,
 UICollectionViewDataSource {
     
     @IBOutlet weak var collectionView:UICollectionView!
+    let manager = ExploreDataManager()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Hello Explore View Controller")
+                manager.fetch()
 
         // Do any additional setup after loading the view.
     }
@@ -29,7 +31,13 @@ UICollectionViewDataSource {
 
     // gets called for every item needed
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return collectionView.dequeueReusableCell(withReuseIdentifier: "exploreCell", for: indexPath)
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "exploreCell", for: indexPath) as! ExploreCell
+        let item = manager.explore(at: indexPath)
+        cell.lblName.text =  item.name
+        cell.imgExplore.image = UIImage(named: item.image)
+        return cell
+        
     }
    
     // tells collection view how many different sections we want to display
@@ -41,7 +49,7 @@ UICollectionViewDataSource {
     //tell collection view how many different items inside the section we set up
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //display 20 items
-        return 20
+        return manager.numberOfItems()
     }
     
     //to dismiss location modal when you hit cancel button

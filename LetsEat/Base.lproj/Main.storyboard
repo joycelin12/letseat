@@ -122,7 +122,7 @@
                                     <inset key="sectionInset" minX="7" minY="7" maxX="7" maxY="7"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="exploreCell" id="OyW-w8-xON">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="exploreCell" id="OyW-w8-xON" customClass="ExploreCell" customModule="LetsEat" customModuleProvider="target">
                                         <rect key="frame" x="7" y="107" width="176" height="195"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -167,6 +167,8 @@
                                         </constraints>
                                         <size key="customSize" width="176" height="195"/>
                                         <connections>
+                                            <outlet property="imgExplore" destination="1w0-wY-pcI" id="DmV-gI-iSw"/>
+                                            <outlet property="lblName" destination="wsd-q3-JMy" id="pfR-IW-3Ai"/>
                                             <segue destination="erR-XB-fcD" kind="show" id="C6B-Ib-eqW"/>
                                         </connections>
                                     </collectionViewCell>

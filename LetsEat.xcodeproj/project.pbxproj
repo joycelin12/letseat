@@ -11,6 +11,7 @@
 		0D031E552636261D000E778B /* ExploreData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D031E542636261D000E778B /* ExploreData.plist */; };
 		0D031E57263642A5000E778B /* ExploreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D031E56263642A5000E778B /* ExploreItem.swift */; };
 		0D031E5926364898000E778B /* ExploreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D031E5826364898000E778B /* ExploreDataManager.swift */; };
+		0D0B8640264218CB00958735 /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0B863F264218CB00958735 /* ExploreCell.swift */; };
 		0D0D26A02634B8B90095957C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0D269F2634B8B80095957C /* MapKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		0D42E17025FD6ECC001CA409 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D42E16F25FD6ECC001CA409 /* AppDelegate.swift */; };
 		0D42E17525FD6ECC001CA409 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D42E17325FD6ECC001CA409 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		0D031E542636261D000E778B /* ExploreData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ExploreData.plist; path = "../../../../../Downloads/iOS-12-Programming-for-Beginners-Third-Edition-master/Chapter12/completed/LetsEat/LetsEat/Controllers/Explore/Model/ExploreData.plist"; sourceTree = "<group>"; };
 		0D031E56263642A5000E778B /* ExploreItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreItem.swift; sourceTree = "<group>"; };
 		0D031E5826364898000E778B /* ExploreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreDataManager.swift; sourceTree = "<group>"; };
+		0D0B863F264218CB00958735 /* ExploreCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
 		0D0D269F2634B8B80095957C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0D0D26A22634D1040095957C /* FunctionsStructs.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FunctionsStructs.playground; sourceTree = "<group>"; };
 		0D0D26A32634D7FD0095957C /* CollectionViewBasics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CollectionViewBasics.playground; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 				0D031E5826364898000E778B /* ExploreDataManager.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		0D0B863E2642102B00958735 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0D0B863F264218CB00958735 /* ExploreCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		0D0D269E2634B8B80095957C /* Frameworks */ = {
@@ -96,6 +106,7 @@
 		0D42E16E25FD6ECB001CA409 /* LetsEat */ = {
 			isa = PBXGroup;
 			children = (
+				0D0B863E2642102B00958735 /* View */,
 				0D031E5326362608000E778B /* Model */,
 				0D42E16F25FD6ECC001CA409 /* AppDelegate.swift */,
 				0D42E18325FD8887001CA409 /* Assets.xcassets */,
@@ -186,6 +197,7 @@
 				0D031E57263642A5000E778B /* ExploreItem.swift in Sources */,
 				0D031E5926364898000E778B /* ExploreDataManager.swift in Sources */,
 				0D42E17025FD6ECC001CA409 /* AppDelegate.swift in Sources */,
+				0D0B8640264218CB00958735 /* ExploreCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
