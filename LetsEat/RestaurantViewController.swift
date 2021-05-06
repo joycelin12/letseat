@@ -10,6 +10,7 @@ import UIKit
 
 class RestaurantViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
