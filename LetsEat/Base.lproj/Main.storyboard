@@ -169,7 +169,7 @@
                                         <connections>
                                             <outlet property="imgExplore" destination="1w0-wY-pcI" id="DmV-gI-iSw"/>
                                             <outlet property="lblName" destination="wsd-q3-JMy" id="pfR-IW-3Ai"/>
-                                            <segue destination="erR-XB-fcD" kind="show" id="C6B-Ib-eqW"/>
+                                            <segue destination="erR-XB-fcD" kind="show" id="5ur-QF-um9"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -259,10 +259,10 @@
             </objects>
             <point key="canvasLocation" x="1110.144927536232" y="-1385.8695652173915"/>
         </scene>
-        <!--Restaurant View Controller-->
+        <!--Restaurant List View Controller-->
         <scene sceneID="vdc-sS-Was">
             <objects>
-                <viewController id="erR-XB-fcD" customClass="RestaurantViewController" customModule="LetsEat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="erR-XB-fcD" customClass="RestaurantListViewController" customModule="LetsEat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3OJ-Ss-isW"/>
                         <viewControllerLayoutGuide type="bottom" id="L5V-xB-Rsb"/>
@@ -282,7 +282,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="restaurantCell" id="QaL-Cq-E0b">
-                                        <rect key="frame" x="19.666666666666668" y="0.0" width="375" height="312"/>
+                                        <rect key="frame" x="20" y="0.0" width="375" height="312"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="312"/>
@@ -399,8 +399,8 @@
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="ajq-RA-rer" id="PNg-xm-6lx"/>
-                                    <outlet property="delegate" destination="ajq-RA-rer" id="amK-Ka-jHz"/>
+                                    <outlet property="dataSource" destination="ajq-RA-rer" id="hLY-sX-cfP"/>
+                                    <outlet property="delegate" destination="ajq-RA-rer" id="800-RV-a3Q"/>
                                 </connections>
                             </collectionView>
                         </subviews>
@@ -413,7 +413,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="collectionView" destination="ToA-JR-9wE" id="yUe-sW-cvJ"/>
+                        <outlet property="collectionView" destination="ToA-JR-9wE" id="tfA-Av-KHF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NYn-M6-Va3" userLabel="First Responder" sceneMemberID="firstResponder"/>
