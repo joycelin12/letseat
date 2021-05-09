@@ -38,6 +38,7 @@
 		0D42E18325FD8887001CA409 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D42E18725FD979B001CA409 /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		0D4C59B6264347D800F503EE /* RestaurantListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
+		0D55CB452648259100E44433 /* TableView.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TableView.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +88,14 @@
 			name = Playgrounds;
 			sourceTree = "<group>";
 		};
+		0D3727E62646FA75005589C5 /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				0D55CB452648259100E44433 /* TableView.playground */,
+			);
+			name = Playgrounds;
+			sourceTree = "<group>";
+		};
 		0D42E16325FD6ECA001CA409 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +117,7 @@
 		0D42E16E25FD6ECB001CA409 /* LetsEat */ = {
 			isa = PBXGroup;
 			children = (
+				0D3727E62646FA75005589C5 /* Playgrounds */,
 				0D4C59B52643463300F503EE /* Restaurants */,
 				0D0B863E2642102B00958735 /* View */,
 				0D031E5326362608000E778B /* Model */,
