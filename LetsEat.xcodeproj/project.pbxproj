@@ -18,7 +18,9 @@
 		0D42E17A25FD6ECC001CA409 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D42E17825FD6ECC001CA409 /* LaunchScreen.storyboard */; };
 		0D42E18425FD8887001CA409 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D42E18325FD8887001CA409 /* Assets.xcassets */; };
 		0D42E18825FD979B001CA409 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D42E18725FD979B001CA409 /* RestaurantViewController.swift */; };
+		0D48FFFC2649F83600AC2833 /* Locations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D48FFFB2649F83600AC2833 /* Locations.plist */; };
 		0D4C59B7264347D800F503EE /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4C59B6264347D800F503EE /* RestaurantListViewController.swift */; };
+		0D55CB4B2648BFD100E44433 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D55CB4A2648BFD100E44433 /* LocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +39,10 @@
 		0D42E17B25FD6ECC001CA409 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D42E18325FD8887001CA409 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D42E18725FD979B001CA409 /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		0D48FFFB2649F83600AC2833 /* Locations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Locations.plist; sourceTree = "<group>"; };
 		0D4C59B6264347D800F503EE /* RestaurantListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
 		0D55CB452648259100E44433 /* TableView.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TableView.playground; sourceTree = "<group>"; };
+		0D55CB4A2648BFD100E44433 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 		0D42E16E25FD6ECB001CA409 /* LetsEat */ = {
 			isa = PBXGroup;
 			children = (
+				0D55CB462648B78200E44433 /* Location */,
 				0D3727E62646FA75005589C5 /* Playgrounds */,
 				0D4C59B52643463300F503EE /* Restaurants */,
 				0D0B863E2642102B00958735 /* View */,
@@ -138,6 +143,39 @@
 				0D4C59B6264347D800F503EE /* RestaurantListViewController.swift */,
 			);
 			name = Restaurants;
+			sourceTree = "<group>";
+		};
+		0D55CB462648B78200E44433 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				0D55CB492648B79B00E44433 /* View */,
+				0D55CB482648B79000E44433 /* Contollers */,
+				0D55CB472648B78A00E44433 /* Model */,
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
+		0D55CB472648B78A00E44433 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D48FFFB2649F83600AC2833 /* Locations.plist */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0D55CB482648B79000E44433 /* Contollers */ = {
+			isa = PBXGroup;
+			children = (
+				0D55CB4A2648BFD100E44433 /* LocationViewController.swift */,
+			);
+			name = Contollers;
+			sourceTree = "<group>";
+		};
+		0D55CB492648B79B00E44433 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +240,7 @@
 				0D031E552636261D000E778B /* ExploreData.plist in Resources */,
 				0D42E17A25FD6ECC001CA409 /* LaunchScreen.storyboard in Resources */,
 				0D42E18425FD8887001CA409 /* Assets.xcassets in Resources */,
+				0D48FFFC2649F83600AC2833 /* Locations.plist in Resources */,
 				0D42E17525FD6ECC001CA409 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,6 +259,7 @@
 				0D031E5926364898000E778B /* ExploreDataManager.swift in Sources */,
 				0D42E17025FD6ECC001CA409 /* AppDelegate.swift in Sources */,
 				0D0B8640264218CB00958735 /* ExploreCell.swift in Sources */,
+				0D55CB4B2648BFD100E44433 /* LocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
