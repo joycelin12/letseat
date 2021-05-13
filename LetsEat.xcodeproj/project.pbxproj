@@ -13,6 +13,7 @@
 		0D031E5926364898000E778B /* ExploreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D031E5826364898000E778B /* ExploreDataManager.swift */; };
 		0D0B8640264218CB00958735 /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0B863F264218CB00958735 /* ExploreCell.swift */; };
 		0D0D26A02634B8B90095957C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0D269F2634B8B80095957C /* MapKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		0D1FDF09264C6CE40079999B /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1FDF08264C6CE40079999B /* LocationDataManager.swift */; };
 		0D42E17025FD6ECC001CA409 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D42E16F25FD6ECC001CA409 /* AppDelegate.swift */; };
 		0D42E17525FD6ECC001CA409 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D42E17325FD6ECC001CA409 /* Main.storyboard */; };
 		0D42E17A25FD6ECC001CA409 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D42E17825FD6ECC001CA409 /* LaunchScreen.storyboard */; };
@@ -32,6 +33,7 @@
 		0D0D269F2634B8B80095957C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0D0D26A22634D1040095957C /* FunctionsStructs.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FunctionsStructs.playground; sourceTree = "<group>"; };
 		0D0D26A32634D7FD0095957C /* CollectionViewBasics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CollectionViewBasics.playground; sourceTree = "<group>"; };
+		0D1FDF08264C6CE40079999B /* LocationDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
 		0D42E16C25FD6ECB001CA409 /* LetsEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D42E16F25FD6ECC001CA409 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D42E17425FD6ECC001CA409 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				0D48FFFB2649F83600AC2833 /* Locations.plist */,
+				0D1FDF08264C6CE40079999B /* LocationDataManager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				0D031E5926364898000E778B /* ExploreDataManager.swift in Sources */,
 				0D42E17025FD6ECC001CA409 /* AppDelegate.swift in Sources */,
 				0D0B8640264218CB00958735 /* ExploreCell.swift in Sources */,
+				0D1FDF09264C6CE40079999B /* LocationDataManager.swift in Sources */,
 				0D55CB4B2648BFD100E44433 /* LocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
