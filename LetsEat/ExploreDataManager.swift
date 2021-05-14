@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ExploreDataManager {
+class ExploreDataManager: DataManager {
     
     fileprivate var items:[ExploreItem] = []
     
@@ -27,7 +27,7 @@ class ExploreDataManager {
     func explore(at index:IndexPath) -> ExploreItem {
         return items[index.item]
     }
-    
+    /*
     //fileprivate to give access level
     fileprivate func loadData() -> [[String: AnyObject]] {
         guard let path = Bundle.main.path(forResource: "ExploreData", ofType: "plist"),
@@ -35,5 +35,5 @@ class ExploreDataManager {
                 return [[:]]
         }
         return items as! [[String : AnyObject]]
-    }
+    }*/
 }
