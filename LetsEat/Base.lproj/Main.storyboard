@@ -12,10 +12,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="CxD-2d-hda">
             <objects>
-                <viewController id="mxm-uz-9js" sceneMemberID="viewController">
+                <viewController id="mxm-uz-9js" customClass="MapViewController" customModule="LetsEat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oIA-aj-PVl"/>
                         <viewControllerLayoutGuide type="bottom" id="5ww-4z-C5W"/>
@@ -37,6 +37,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6KM-R6-PIk"/>
+                    <connections>
+                        <outlet property="mapView" destination="whp-r6-nFZ" id="AMi-gS-CbS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wZ4-aS-Qw6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,11 +65,11 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1RQ-W3-Q1W" id="Ybq-rf-8yt">
-                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TCR-cM-fqT">
-                                                    <rect key="frame" x="15" y="0.0" width="364" height="43.666666666666664"/>
+                                                    <rect key="frame" x="15" y="0.0" width="364" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>

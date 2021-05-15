@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import MapKit
 
 class MapDataManager : DataManager {
     
@@ -26,7 +27,7 @@ class MapDataManager : DataManager {
         completion(items)
     }
     
-    func currentRegion(latDelta:CCLocationDegrees, longDelta:CCLocationDegrees) -> MKCoordinateRegion {
+    func currentRegion(latDelta:CLLocationDegrees, longDelta:CLLocationDegrees) -> MKCoordinateRegion {
     
         guard let item = items.first else { return MKCoordinateRegion()}
         let span = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: longDelta)
