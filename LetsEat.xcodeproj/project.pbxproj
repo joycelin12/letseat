@@ -14,6 +14,8 @@
 		0D0B8640264218CB00958735 /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0B863F264218CB00958735 /* ExploreCell.swift */; };
 		0D0D26A02634B8B90095957C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D0D269F2634B8B80095957C /* MapKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		0D1FDF09264C6CE40079999B /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1FDF08264C6CE40079999B /* LocationDataManager.swift */; };
+		0D253F0126507D2300BA4536 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D253F0026507D2300BA4536 /* Segue.swift */; };
+		0D253F042650876F00BA4536 /* RestaurantDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D253F032650876F00BA4536 /* RestaurantDetailTableViewController.swift */; };
 		0D42E17025FD6ECC001CA409 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D42E16F25FD6ECC001CA409 /* AppDelegate.swift */; };
 		0D42E17525FD6ECC001CA409 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D42E17325FD6ECC001CA409 /* Main.storyboard */; };
 		0D42E17A25FD6ECC001CA409 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D42E17825FD6ECC001CA409 /* LaunchScreen.storyboard */; };
@@ -39,6 +41,8 @@
 		0D0D26A22634D1040095957C /* FunctionsStructs.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FunctionsStructs.playground; sourceTree = "<group>"; };
 		0D0D26A32634D7FD0095957C /* CollectionViewBasics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CollectionViewBasics.playground; sourceTree = "<group>"; };
 		0D1FDF08264C6CE40079999B /* LocationDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
+		0D253F0026507D2300BA4536 /* Segue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
+		0D253F032650876F00BA4536 /* RestaurantDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailTableViewController.swift; sourceTree = "<group>"; };
 		0D42E16C25FD6ECB001CA409 /* LetsEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D42E16F25FD6ECC001CA409 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D42E17425FD6ECC001CA409 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -104,6 +108,22 @@
 			name = Playgrounds;
 			sourceTree = "<group>";
 		};
+		0D253EFF26507D0A00BA4536 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0D253F0026507D2300BA4536 /* Segue.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		0D253F022650871A00BA4536 /* RestaurantDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0D253F032650876F00BA4536 /* RestaurantDetailTableViewController.swift */,
+			);
+			name = RestaurantDetail;
+			sourceTree = "<group>";
+		};
 		0D3727E62646FA75005589C5 /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +153,7 @@
 		0D42E16E25FD6ECB001CA409 /* LetsEat */ = {
 			isa = PBXGroup;
 			children = (
+				0D253F022650871A00BA4536 /* RestaurantDetail */,
 				0D7D21FB264DFF000093D403 /* Misc */,
 				0D7D21F5264DCE0D0093D403 /* Map */,
 				0D55CB462648B78200E44433 /* Location */,
@@ -215,6 +236,7 @@
 		0D7D21FB264DFF000093D403 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				0D253EFF26507D0A00BA4536 /* Common */,
 				0D7D21FC264DFF270093D403 /* DataManager.swift */,
 			);
 			name = Misc;
@@ -308,6 +330,7 @@
 				0D7D21FA264DF7AE0093D403 /* MapDataManager.swift in Sources */,
 				0D42E18825FD979B001CA409 /* RestaurantViewController.swift in Sources */,
 				0D031E57263642A5000E778B /* ExploreItem.swift in Sources */,
+				0D253F0126507D2300BA4536 /* Segue.swift in Sources */,
 				0D4C59B7264347D800F503EE /* RestaurantListViewController.swift in Sources */,
 				0D874A5C264F3406005FB178 /* MapViewController.swift in Sources */,
 				0D031E5926364898000E778B /* ExploreDataManager.swift in Sources */,
@@ -316,6 +339,7 @@
 				0D7D21F8264DCF9D0093D403 /* RestaurantItem.swift in Sources */,
 				0D1FDF09264C6CE40079999B /* LocationDataManager.swift in Sources */,
 				0D55CB4B2648BFD100E44433 /* LocationViewController.swift in Sources */,
+				0D253F042650876F00BA4536 /* RestaurantDetailTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -39,6 +39,7 @@
                     <navigationItem key="navigationItem" id="6KM-R6-PIk"/>
                     <connections>
                         <outlet property="mapView" destination="whp-r6-nFZ" id="AMi-gS-CbS"/>
+                        <segue destination="xzg-7k-Oet" kind="show" identifier="showDetail" id="NWM-md-fNw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wZ4-aS-Qw6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -473,7 +474,7 @@
         <!--Table View Controller-->
         <scene sceneID="gor-eD-uyR">
             <objects>
-                <tableViewController id="xzg-7k-Oet" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="RestaurantDetail" id="xzg-7k-Oet" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Tph-Rg-KqR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -628,4 +629,7 @@
         <image name="icon-map-on" width="16" height="22"/>
         <image name="time-bg" width="68" height="27"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="NWM-md-fNw"/>
+    </inferredMetricsTieBreakers>
 </document>
