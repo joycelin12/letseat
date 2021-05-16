@@ -8,8 +8,7 @@
 
 import UIKit
 
-class ExploreViewController: UIViewController,
-UICollectionViewDataSource {
+class ExploreViewController: UIViewController {
     
     @IBOutlet weak var collectionView:UICollectionView!
     let manager = ExploreDataManager()
@@ -17,10 +16,30 @@ UICollectionViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-                manager.fetch()
+        initialize()
 
         // Do any additional setup after loading the view.
     }
+    
+}
+
+//MARK: Private Extension
+private extension ExploreViewController {
+    
+    func initialize() {
+        manager.fetch()
+    }
+    
+    //to dismiss location modal when you hit cancel button
+    @IBAction func unwindLocationCancel(segue:UIStoryboardSegue)
+    {}
+
+
+}
+
+//MARK: UICollectionViewDataSource 
+extension ExploreViewController: UICollectionViewDataSource
+{
     
     //to add a header to collectionview
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -28,7 +47,7 @@ UICollectionViewDataSource {
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath)
         return headerView
     }
-
+    
     // gets called for every item needed
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
@@ -39,7 +58,7 @@ UICollectionViewDataSource {
         return cell
         
     }
-   
+    
     // tells collection view how many different sections we want to display
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         //only one section
@@ -52,7 +71,7 @@ UICollectionViewDataSource {
         return manager.numberOfItems()
     }
     
-    //to dismiss location modal when you hit cancel button
-    @IBAction func unwindLocationCancel(segue:UIStoryboardSegue)
-    {}
+
 }
+
+

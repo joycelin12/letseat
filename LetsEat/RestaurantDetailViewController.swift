@@ -1,5 +1,5 @@
 //
-//  RestaurantDetailTableViewController.swift
+//  RestaurantDetailViewController.swift
 //  LetsEat
 //
 //  Created by Peiyu Joyce Lin Williamson on 5/15/21.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RestaurantDetailTableViewController: UITableViewController {
+class RestaurantDetailViewController: UITableViewController {
     
     var selectedRestaurant:RestaurantItem?
 

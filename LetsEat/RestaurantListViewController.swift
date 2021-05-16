@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RestaurantListViewController: UIViewController, UICollectionViewDataSource {
+class RestaurantListViewController: UIViewController {
     
     @IBOutlet var collectionView:UICollectionView!
 
@@ -17,6 +17,17 @@ class RestaurantListViewController: UIViewController, UICollectionViewDataSource
 
         // Do any additional setup after loading the view.
     }
+    
+   
+}
+
+//MARK: Private Extension
+private extension RestaurantViewController {
+    
+}
+
+//MARK UICollectionViewDataSource
+extension RestaurantListViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         return collectionView.dequeueReusableCell(withReuseIdentifier: "restaurantCell", for: indexPath)
@@ -30,5 +41,5 @@ class RestaurantListViewController: UIViewController, UICollectionViewDataSource
         return 10
     }
 
-   
+
 }
