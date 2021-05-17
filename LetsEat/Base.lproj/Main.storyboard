@@ -62,15 +62,15 @@
                                 <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="locationCell" textLabel="TCR-cM-fqT" style="IBUITableViewCellStyleDefault" id="1RQ-W3-Q1W">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="locationCell" textLabel="TCR-cM-fqT" style="IBUITableViewCellStyleDefault" id="1RQ-W3-Q1W">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1RQ-W3-Q1W" id="Ybq-rf-8yt">
-                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TCR-cM-fqT">
-                                                    <rect key="frame" x="15" y="0.0" width="364" height="43.666666666666664"/>
+                                                    <rect key="frame" x="15" y="0.0" width="384" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -100,7 +100,11 @@
                                 <segue destination="9ee-QI-FE9" kind="unwind" unwindAction="unwindLocationCancelWithSegue:" id="fuj-3M-P5F"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Cba-RD-EOP"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Cba-RD-EOP">
+                            <connections>
+                                <segue destination="9ee-QI-FE9" kind="unwind" unwindAction="unwindLocationDoneWithSegue:" id="lQe-X0-Ljw"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="f5h-01-0nM" id="y0b-8j-CRR"/>
@@ -180,11 +184,11 @@
                                         <connections>
                                             <outlet property="imgExplore" destination="1w0-wY-pcI" id="DmV-gI-iSw"/>
                                             <outlet property="lblName" destination="wsd-q3-JMy" id="pfR-IW-3Ai"/>
-                                            <segue destination="erR-XB-fcD" kind="show" id="yCl-4j-7Vl"/>
+                                            <segue destination="erR-XB-fcD" kind="show" identifier="restaurantList" id="yCl-4j-7Vl"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="header" id="FBH-PK-6PW">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="header" id="FBH-PK-6PW" customClass="ExploreHeaderView" customModule="LetsEat" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -199,7 +203,7 @@
                                                     </constraints>
                                                     <state key="normal" image="btn-location"/>
                                                     <connections>
-                                                        <segue destination="Zq7-8F-CeI" kind="presentation" id="4VL-8q-Ygm"/>
+                                                        <segue destination="Zq7-8F-CeI" kind="presentation" identifier="locationList" id="4VL-8q-Ygm"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3w-Nu-96o">
@@ -211,7 +215,7 @@
                                                     <color key="textColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFf-xr-d5c">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXPLORE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFf-xr-d5c">
                                                     <rect key="frame" x="8" y="45" width="255" height="37"/>
                                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -246,6 +250,9 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="80E-Fs-Yy5" secondAttribute="bottom" constant="-3" id="nZ0-MO-s3d"/>
                                         <constraint firstItem="80E-Fs-Yy5" firstAttribute="leading" secondItem="FBH-PK-6PW" secondAttribute="leading" id="u7b-W9-mHs"/>
                                     </constraints>
+                                    <connections>
+                                        <outlet property="lblLocation" destination="b3w-Nu-96o" id="3gB-aX-pDr"/>
+                                    </connections>
                                 </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="b5P-px-xVU" id="bhj-cK-jqz"/>
@@ -293,7 +300,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="restaurantCell" id="QaL-Cq-E0b">
-                                        <rect key="frame" x="19.666666666666668" y="0.0" width="375" height="312"/>
+                                        <rect key="frame" x="20" y="0.0" width="375" height="312"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="312"/>
@@ -486,7 +493,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sNg-3N-BI2" id="VGA-IG-86x">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHR-qM-rWh">
@@ -504,7 +511,7 @@
                                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qBe-98-uPv" id="s0v-sv-OVp">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -512,7 +519,7 @@
                                         <rect key="frame" x="0.0" y="88" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mvY-mf-l4r" id="I6V-AL-CaP">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>

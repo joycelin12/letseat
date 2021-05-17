@@ -11,7 +11,10 @@ import UIKit
 class ExploreViewController: UIViewController {
     
     @IBOutlet weak var collectionView:UICollectionView!
+    
     let manager = ExploreDataManager()
+    var selectedCity:LocationItem?
+    var headerView: ExploreHeaderView!
 
 
     override func viewDidLoad() {
@@ -33,6 +36,18 @@ private extension ExploreViewController {
     //to dismiss location modal when you hit cancel button
     @IBAction func unwindLocationCancel(segue:UIStoryboardSegue)
     {}
+    
+    @IBAction func unwindLocationDone(segue:UIStoryboardSegue)
+    {
+        if let viewController = segue.source as?
+            LocationViewController {
+            selectedCity = viewController.selectedCity
+            if let location = selectedCity {
+                headerView.lblLocation.text = location.full
+            }
+        }
+    }
+
 
 
 }
@@ -44,7 +59,8 @@ extension ExploreViewController: UICollectionViewDataSource
     //to add a header to collectionview
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         //identifier helps xcode know what view we referring to
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath)
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath)
+            headerView = header as? ExploreHeaderView
         return headerView
     }
     

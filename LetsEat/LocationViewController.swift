@@ -15,12 +15,15 @@ class LocationViewController: UIViewController {
     /*let locations = ["Aspen", "Boston", "Charleton", "Chicago", "Houston", "Las Vegas", "Los Angeles", "Miami", "New Orleans", "New York", "Philadelphia", "Portland", "San Antonio", "San Francisco", "Washington District of Columbia"]*/
     
     let manager = LocationDataManager()
+    var selectedCity:LocationItem?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initialize()
         // Do any additional setup after loading the view.
     }
+    
+    func set 
     
     
 }
@@ -48,11 +51,22 @@ extension LocationViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "locationCell", for: indexPath) as UITableViewCell
         //cell.textLabel?.text = locations[indexPath.item]
-        cell.textLabel?.text = manager.locationItem(at: indexPath)
+        cell.textLabel?.text = manager.locationItem(at:indexPath).full
         return cell
         
     }
+}
 
-    
+//MARK UITableViewDelegate
+extension LocationViewController: UITableViewDelegate {
+       
+    func tableView(_tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        if let cell = tableView.cellForRow(at:indexPath) {
+            cell.accessoryType = .checkmark
+            selectedCity = manager.locationItem(at:indexPath)
+            tableView.reloadData()
+        }
+    }
 }
 
