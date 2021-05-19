@@ -10,6 +10,10 @@ import UIKit
 
 class RestaurantListViewController: UIViewController {
     
+    var selectedRestaurant:RestaurantItem?
+    
+    
+    
     @IBOutlet var collectionView:UICollectionView!
 
     override func viewDidLoad() {

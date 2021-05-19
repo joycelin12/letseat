@@ -29,7 +29,7 @@ class LocationDataManager {
         }
     }
     
-    func numbeOfItems() -> Int {
+    func numberOfItems() -> Int {
         return locations.count
     }
     

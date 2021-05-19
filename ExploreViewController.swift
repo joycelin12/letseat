@@ -33,14 +33,30 @@ private extension ExploreViewController {
         manager.fetch()
     }
     
+    func showLocationList(segue: UIStoryboardSegue)
+    {
+        guard let navController = segue.destination as? UINavigationController,
+            let viewController = navController.topViewController as? LocationViewController
+        else {
+            return
+        }
+        guard let city = selectedCity else {
+            return
+        }
+        viewController.selectedCity = city
+    }
+    
+    
     //to dismiss location modal when you hit cancel button
     @IBAction func unwindLocationCancel(segue:UIStoryboardSegue)
     {}
     
     @IBAction func unwindLocationDone(segue:UIStoryboardSegue)
     {
+        print("inside")
         if let viewController = segue.source as?
             LocationViewController {
+            print("hello")
             selectedCity = viewController.selectedCity
             if let location = selectedCity {
                 headerView.lblLocation.text = location.full
