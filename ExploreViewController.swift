@@ -24,6 +24,8 @@ class ExploreViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    
 }
 
 //MARK: Private Extension
@@ -33,7 +35,7 @@ private extension ExploreViewController {
         manager.fetch()
     }
     
-    func showLocationList(segue: UIStoryboardSegue)
+    func showLocationList(segue:UIStoryboardSegue)
     {
         guard let navController = segue.destination as? UINavigationController,
             let viewController = navController.topViewController as? LocationViewController
@@ -44,6 +46,25 @@ private extension ExploreViewController {
             return
         }
         viewController.selectedCity = city
+    }
+    
+    func showRestaurantListing(segue:UIStoryboardSegue) {
+        if let viewController = segue.destination as?
+        RestaurantListViewController, let city = selectedCity,
+            let index = collectionView.indexPathsForSelectedItems?.first
+        {
+            viewController.selectedType = manager.explore(at: index).name
+            viewController.selectedCity = city
+        }
+    }
+    
+    func showAlert() {
+        
+        let alertController = UIAlertController(title: "Location Needed",
+            message:" Please select a location.", preferredStyle:.alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(okAction)
+        present(alertController, animated: true, completion: nil)
     }
     
     

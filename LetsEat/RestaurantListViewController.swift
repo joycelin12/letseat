@@ -11,6 +11,8 @@ import UIKit
 class RestaurantListViewController: UIViewController {
     
     var selectedRestaurant:RestaurantItem?
+    var selectedCity:LocationItem?
+    var selectedType:String?
     
     
     
@@ -20,6 +22,13 @@ class RestaurantListViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("selected city \(selectedCity as Any)")
+        print("selected type \(selectedType as Any)")
+    
     }
     
    
