@@ -62,15 +62,15 @@
                                 <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="locationCell" textLabel="TCR-cM-fqT" style="IBUITableViewCellStyleDefault" id="1RQ-W3-Q1W">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="locationCell" textLabel="TCR-cM-fqT" style="IBUITableViewCellStyleDefault" id="1RQ-W3-Q1W">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1RQ-W3-Q1W" id="Ybq-rf-8yt">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TCR-cM-fqT">
-                                                    <rect key="frame" x="15" y="0.0" width="384" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="364" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -184,7 +184,7 @@
                                         <connections>
                                             <outlet property="imgExplore" destination="1w0-wY-pcI" id="DmV-gI-iSw"/>
                                             <outlet property="lblName" destination="wsd-q3-JMy" id="pfR-IW-3Ai"/>
-                                            <segue destination="erR-XB-fcD" kind="show" identifier="restaurantList" id="yCl-4j-7Vl"/>
+                                            <segue destination="erR-XB-fcD" kind="show" identifier="restaruantList" id="yCl-4j-7Vl"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

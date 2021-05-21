@@ -24,6 +24,29 @@ class ExploreViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier! {
+        case Segue.locationList.rawValue:
+            showLocationList(segue: segue)
+        case Segue.restaruantList.rawValue:
+            showRestaurantListing(segue: segue)
+        default:
+            print("Segue not added")
+        }
+    }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == Segue.restaruantList.rawValue {
+        
+            guard selectedCity != nil else {
+                showAlert()
+                return false
+            }
+            return true
+        }
+        return true
+    }
+    
     
     
 }
@@ -80,8 +103,10 @@ private extension ExploreViewController {
             print("hello")
             selectedCity = viewController.selectedCity
             if let location = selectedCity {
+                print("haHaha")
                 headerView.lblLocation.text = location.full
             }
+            print("heee")
         }
     }
 

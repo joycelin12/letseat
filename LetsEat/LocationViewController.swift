@@ -59,7 +59,7 @@ private extension LocationViewController {
 extension LocationViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return manager.numbeOfItems()
+        return manager.numberOfItems()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
