@@ -25,10 +25,12 @@ class LocationViewController: UIViewController {
     
     func set(selected cell: UITableViewCell, at indexPath: IndexPath) {
     
+        
         if let city = selectedCity?.city {
             let data = manager.findLocation(by: city)
             
             if data.isFound {
+                
                 if indexPath.row == data.position {
                     cell.accessoryType = .checkmark
                     
@@ -38,7 +40,9 @@ class LocationViewController: UIViewController {
             
         }
         else {
+           
             cell.accessoryType = .none
+
         }
     
     }
@@ -66,6 +70,7 @@ extension LocationViewController: UITableViewDataSource {
         return 1
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "locationCell", for: indexPath) as UITableViewCell
         //cell.textLabel?.text = locations[indexPath.item]
@@ -74,11 +79,14 @@ extension LocationViewController: UITableViewDataSource {
         return cell
         
     }
+    
+    
 }
 
 //MARK UITableViewDelegate
 extension LocationViewController: UITableViewDelegate {
-       
+    
+    
     func tableView(_tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         if let cell = tableView.cellForRow(at:indexPath) {

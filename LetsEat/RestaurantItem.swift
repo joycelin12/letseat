@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class RestaurantItem: NSObject, MKAnnotation {
+class RestaurantItem: NSObject, MKAnnotation, Decodable {
     
     var name:String?
     var cuisines:[String] = []
@@ -52,4 +52,15 @@ class RestaurantItem: NSObject, MKAnnotation {
         return CLLocationCoordinate2D(latitude: lat, longitude: long)
     }
     
+    enum CodingKeys: String, CodingKey {
+        
+        case name
+        case cuisines
+        case lat
+        case long
+        case address
+        case postalCode = "postal_code"
+        case state
+        case imageURL = "image_url"
+    }
 }

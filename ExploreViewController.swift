@@ -27,8 +27,9 @@ class ExploreViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier! {
         case Segue.locationList.rawValue:
+            print("Segue ae u hee")
             showLocationList(segue: segue)
-        case Segue.restaruantList.rawValue:
+        case Segue.restaurantList.rawValue:
             showRestaurantListing(segue: segue)
         default:
             print("Segue not added")
@@ -36,7 +37,7 @@ class ExploreViewController: UIViewController {
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        if identifier == Segue.restaruantList.rawValue {
+        if identifier == Segue.restaurantList.rawValue {
         
             guard selectedCity != nil else {
                 showAlert()
@@ -60,11 +61,16 @@ private extension ExploreViewController {
     
     func showLocationList(segue:UIStoryboardSegue)
     {
+        print("hello 2")
         guard let navController = segue.destination as? UINavigationController,
+            
             let viewController = navController.topViewController as? LocationViewController
         else {
             return
         }
+        print("hello 3")
+        print(selectedCity?.city)
+        
         guard let city = selectedCity else {
             return
         }

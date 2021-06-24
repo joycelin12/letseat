@@ -14,7 +14,7 @@ enum Segue:String {
     case showRating
     case showReview
     case ShowAllReviews
-    case restaruantList
+    case restaurantList
     case locationList
     case showPhotoReview
     case showPhotoFilter
